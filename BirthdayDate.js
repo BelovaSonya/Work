@@ -3,7 +3,7 @@
 
 const user1 = {
     name: 'Vasia',
-    birthday: '07/09/2024'
+    birthday: '15/06/2024'
 };
 
 function isBirthday(user){
