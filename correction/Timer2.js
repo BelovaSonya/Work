@@ -1,7 +1,7 @@
 'use strist'
 /* таймер для пиццы */
 
-function pizzaTimer(ms){
+let pizzaTime = (ms) => {
     const end = new Date().getTime() + ms;
     const interval = setInterval(( )=> {
         console.log(
@@ -17,4 +17,5 @@ function pizzaTimer(ms){
     }, ms)
 }
 
-pizzaTimer(5000);
+pizzaTimer(6000);
+

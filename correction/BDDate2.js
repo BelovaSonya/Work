@@ -1,21 +1,19 @@
 'use strict';
 /*проверить дату Дня Рождения, есть он или нет*/
 
-const user1 = {
+const user = {
     name: 'Vasia',
-    birthday: '15/06/2024'
+    birthday: '07/03/2024'
 };
 
-function isBirthday(user){
+const isBirthday = (user) => {
     const birthdayDate = new Date(user.birthday);
     const now = new Date();
-    if (birthdayDate.getMonth() !== now.getMonth()) {
-        return false;
-    }
-    if (birthdayDate.getDate() !== now.getDate()){
+    if ((birthdayDate.getMonth() !== now.getMonth()) || (birthdayDate.getDate() !== now.getDate())) {
         return false;
     }
     return true;
 }
 
-console.log(isBirthday(user1));
+console.log(isBirthday(user));
+
