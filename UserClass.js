@@ -25,11 +25,12 @@ class User {
     }
 
     changePassword(oldPass, newPass){
-        if (this.changePassword(oldPass)){
-            return false;
+        const isOldPassword = this.checkPassword(oldPass);
+        if (!isOldPassword) {
+            this.#password = newPass;
         }
-        this.#password = newPass;
-        return true;
+        
+        return isOldPassword;
     }
 }
 

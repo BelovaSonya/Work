@@ -1,7 +1,6 @@
 'use strist'
 
 class Enemy {
-    healthealth;
     constructor(health){
         this.health = health;
     }
@@ -36,3 +35,4 @@ class Orc extends Enemy {
 const enemy = new Orc(10);
 const sword = new Sword(3);
 sword.strike(enemy);
+

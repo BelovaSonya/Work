@@ -1,6 +1,6 @@
 'use strict';
 /*проконвертировать из одной валюты в другую*/
-let convert = (sum, initialCurrency, convertCurrency) => {
+const convert = (sum, initialCurrency, convertCurrency) => {
     const allCurrencies = [
         { name : 'USD' , mult: 1 },
         { name : 'RUB' , mult: 1/60 },
@@ -20,3 +20,4 @@ console.log(convert(10000, 'RUB', 'USD'));
 console.log(convert(10000, 'RUB', 'EUR'));
 console.log(convert(100, 'USD', 'RUB'));
 console.log(convert(100, 'TG', 'RUB'));
+

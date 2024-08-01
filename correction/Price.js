@@ -11,3 +11,4 @@ request.addEventListener('load' , function(){
     const sum = products.reduce((acc, p) => acc += p.price, 0);
     console.log(sum / products.length);
 })
+
