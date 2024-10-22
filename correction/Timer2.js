@@ -1,7 +1,7 @@
 'use strist'
 /* таймер для пиццы */
 
-let pizzaTime = (ms) => {
+const pizzaTime = (ms) => {
     const end = new Date().getTime() + ms;
     const interval = setInterval(( )=> {
         console.log(
