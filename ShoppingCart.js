@@ -15,6 +15,7 @@ Cart.prototype.addProduct = function(product){
     }
     this.products.push(product);
 }
+ObjectCase
 
 Cart.prototype.increaseAmount = function(id){
     this.products = this.products.map(product => {

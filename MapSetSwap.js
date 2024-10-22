@@ -7,6 +7,7 @@ let weatherMap = new Map([
     ['USA' , 12],
 ]);
 
+
 weatherMap = [...weatherMap]
 for (const element of weatherMap){
     element.reverse();
